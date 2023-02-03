@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://5jsdrp.sharepoint.com",
+      "customActions": {
+        "b461bf4f-1e92-4dc8-87e2-fcbdec53d20b": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "cssurl": "https://5jsdrp.sharepoint.com/Shared%20Documents/k1.css"
+          }
+        }
+      }
+    },
+    "appcustomizerInjectCss": {
+      "pageUrl": "https://5jsdrp.sharepoint.com",
+      "customActions": {
+        "b461bf4f-1e92-4dc8-87e2-fcbdec53d20b": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "cssurl": "https://5jsdrp.sharepoint.com/Shared%20Documents/k1.css"
+          }
+        }
+      }
+    }
+  }
+}

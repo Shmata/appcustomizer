@@ -1,0 +1,432 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.2",
+  "hash": "81ca119ba9633c94aa3e",
+  "time": 46675,
+  "builtAt": 1675464115049,
+  "publicPath": "",
+  "outputPath": "D:\\host\\MySPFx\\appcustomizer\\dist",
+  "assetsByChunkName": {
+    "appcustomizer-inject-css-application-customizer": [
+      "appcustomizer-inject-css-application-customizer.js",
+      "appcustomizer-inject-css-application-customizer.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "appcustomizer-inject-css-application-customizer.js",
+      "size": 7809,
+      "chunks": [
+        "appcustomizer-inject-css-application-customizer"
+      ],
+      "chunkNames": [
+        "appcustomizer-inject-css-application-customizer"
+      ],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "appcustomizer-inject-css-application-customizer.js.map",
+      "size": 6508,
+      "chunks": [
+        "appcustomizer-inject-css-application-customizer"
+      ],
+      "chunkNames": [
+        "appcustomizer-inject-css-application-customizer"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "b461bf4f-1e92-4dc8-87e2-fcbdec53d20b.manifest.json",
+      "size": 944,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "appcustomizer-inject-css-application-customizer": {
+      "chunks": [
+        "appcustomizer-inject-css-application-customizer"
+      ],
+      "assets": [
+        "appcustomizer-inject-css-application-customizer.js",
+        "appcustomizer-inject-css-application-customizer.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "appcustomizer-inject-css-application-customizer": {
+      "chunks": [
+        "appcustomizer-inject-css-application-customizer"
+      ],
+      "assets": [
+        "appcustomizer-inject-css-application-customizer.js",
+        "appcustomizer-inject-css-application-customizer.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "appcustomizer-inject-css-application-customizer",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 2177,
+      "names": [
+        "appcustomizer-inject-css-application-customizer"
+      ],
+      "files": [
+        "appcustomizer-inject-css-application-customizer.js",
+        "appcustomizer-inject-css-application-customizer.js.map"
+      ],
+      "hash": "3cf79a8180ad12e11883",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": "GPet",
+          "identifier": "external \"@microsoft/sp-application-base\"",
+          "name": "external \"@microsoft/sp-application-base\"",
+          "index": 2,
+          "index2": 1,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "appcustomizer-inject-css-application-customizer"
+          ],
+          "issuer": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "issuerId": "P6WS",
+          "issuerName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "issuerPath": [
+            {
+              "id": "P6WS",
+              "identifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+              "name": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "P6WS",
+              "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+              "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-application-base",
+              "loc": "15:0-75"
+            },
+            {
+              "moduleId": "P6WS",
+              "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+              "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-application-base",
+              "loc": "39:2-27"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": "P6WS",
+          "identifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "name": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "index": 0,
+          "index2": 2,
+          "size": 2093,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "appcustomizer-inject-css-application-customizer"
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+              "loc": "appcustomizer-inject-css-application-customizer"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { Log } from '@microsoft/sp-core-library';\r\nimport { BaseApplicationCustomizer } from '@microsoft/sp-application-base';\r\nvar LOG_SOURCE = 'AppcustomizerInjectCssApplicationCustomizer';\r\n/** A Custom Action which can be run during execution of a Client Side Application */\r\nvar AppcustomizerInjectCssApplicationCustomizer = /** @class */ (function (_super) {\r\n    __extends(AppcustomizerInjectCssApplicationCustomizer, _super);\r\n    function AppcustomizerInjectCssApplicationCustomizer() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    AppcustomizerInjectCssApplicationCustomizer.prototype.onInit = function () {\r\n        //const sourcefile:string = `https://5jsdrp.sharepoint.com/themeing/Shared%20Documents/k1.css`;\r\n        var cssUrl = this.properties.cssurl;\r\n        if (cssUrl) {\r\n            // inject the style sheet\r\n            var head = document.getElementsByTagName(\"head\")[0] || document.documentElement;\r\n            var customStyle = document.createElement(\"link\");\r\n            customStyle.href = cssUrl;\r\n            customStyle.rel = \"stylesheet\";\r\n            customStyle.type = \"text/css\";\r\n            head.insertAdjacentElement(\"beforeEnd\", customStyle);\r\n        }\r\n        Log.info(LOG_SOURCE, \"K1 CSS address is:  \" + cssUrl);\r\n        return Promise.resolve();\r\n    };\r\n    return AppcustomizerInjectCssApplicationCustomizer;\r\n}(BaseApplicationCustomizer));\r\nexport default AppcustomizerInjectCssApplicationCustomizer;\r\n"
+        },
+        {
+          "id": "UWqr",
+          "identifier": "external \"@microsoft/sp-core-library\"",
+          "name": "external \"@microsoft/sp-core-library\"",
+          "index": 1,
+          "index2": 0,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "appcustomizer-inject-css-application-customizer"
+          ],
+          "issuer": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "issuerId": "P6WS",
+          "issuerName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "issuerPath": [
+            {
+              "id": "P6WS",
+              "identifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+              "name": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "P6WS",
+              "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+              "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-core-library",
+              "loc": "14:0-49"
+            },
+            {
+              "moduleId": "P6WS",
+              "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+              "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-core-library",
+              "loc": "35:8-11"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "appcustomizer-inject-css-application-customizer",
+          "request": "D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "GPet",
+      "identifier": "external \"@microsoft/sp-application-base\"",
+      "name": "external \"@microsoft/sp-application-base\"",
+      "index": 2,
+      "index2": 1,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "appcustomizer-inject-css-application-customizer"
+      ],
+      "issuer": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+      "issuerId": "P6WS",
+      "issuerName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+      "issuerPath": [
+        {
+          "id": "P6WS",
+          "identifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "name": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "P6WS",
+          "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-application-base",
+          "loc": "15:0-75"
+        },
+        {
+          "moduleId": "P6WS",
+          "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-application-base",
+          "loc": "39:2-27"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": "I6O9",
+      "identifier": "external \"@microsoft/sp-loader\"",
+      "name": "external \"@microsoft/sp-loader\"",
+      "index": null,
+      "index2": null,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "id": "P6WS",
+      "identifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+      "name": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+      "index": 0,
+      "index2": 2,
+      "size": 2093,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "appcustomizer-inject-css-application-customizer"
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "loc": "appcustomizer-inject-css-application-customizer"
+        }
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { Log } from '@microsoft/sp-core-library';\r\nimport { BaseApplicationCustomizer } from '@microsoft/sp-application-base';\r\nvar LOG_SOURCE = 'AppcustomizerInjectCssApplicationCustomizer';\r\n/** A Custom Action which can be run during execution of a Client Side Application */\r\nvar AppcustomizerInjectCssApplicationCustomizer = /** @class */ (function (_super) {\r\n    __extends(AppcustomizerInjectCssApplicationCustomizer, _super);\r\n    function AppcustomizerInjectCssApplicationCustomizer() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    AppcustomizerInjectCssApplicationCustomizer.prototype.onInit = function () {\r\n        //const sourcefile:string = `https://5jsdrp.sharepoint.com/themeing/Shared%20Documents/k1.css`;\r\n        var cssUrl = this.properties.cssurl;\r\n        if (cssUrl) {\r\n            // inject the style sheet\r\n            var head = document.getElementsByTagName(\"head\")[0] || document.documentElement;\r\n            var customStyle = document.createElement(\"link\");\r\n            customStyle.href = cssUrl;\r\n            customStyle.rel = \"stylesheet\";\r\n            customStyle.type = \"text/css\";\r\n            head.insertAdjacentElement(\"beforeEnd\", customStyle);\r\n        }\r\n        Log.info(LOG_SOURCE, \"K1 CSS address is:  \" + cssUrl);\r\n        return Promise.resolve();\r\n    };\r\n    return AppcustomizerInjectCssApplicationCustomizer;\r\n}(BaseApplicationCustomizer));\r\nexport default AppcustomizerInjectCssApplicationCustomizer;\r\n"
+    },
+    {
+      "id": "UWqr",
+      "identifier": "external \"@microsoft/sp-core-library\"",
+      "name": "external \"@microsoft/sp-core-library\"",
+      "index": 1,
+      "index2": 0,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "appcustomizer-inject-css-application-customizer"
+      ],
+      "issuer": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+      "issuerId": "P6WS",
+      "issuerName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+      "issuerPath": [
+        {
+          "id": "P6WS",
+          "identifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "name": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "P6WS",
+          "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-core-library",
+          "loc": "14:0-49"
+        },
+        {
+          "moduleId": "P6WS",
+          "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\node_modules\\source-map-loader\\index.js!D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-core-library",
+          "loc": "35:8-11"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
