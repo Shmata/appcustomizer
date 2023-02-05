@@ -30,9 +30,8 @@ export default class AppcustomizerInjectCssApplicationCustomizer
 
     public onInit(): Promise<void> {
       
-
-      //const sourcefile:string = `https://5jsdrp.sharepoint.com/themeing/Shared%20Documents/k1.css`;
       const cssUrl: string =  this.properties.cssurl;
+      console.log(cssUrl);
       if (cssUrl) {
           // inject the style sheet
           const head: any = document.getElementsByTagName("head")[0] || document.documentElement;
@@ -42,7 +41,7 @@ export default class AppcustomizerInjectCssApplicationCustomizer
           customStyle.type = "text/css";
           head.insertAdjacentElement("beforeEnd", customStyle);
       }
-      Log.info(LOG_SOURCE, `K1 CSS address is:  ${cssUrl}`);
+      
 
       return Promise.resolve();
     }

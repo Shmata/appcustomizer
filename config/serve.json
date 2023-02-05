@@ -4,23 +4,23 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://5jsdrp.sharepoint.com",
+      "pageUrl": "https://esabz.sharepoint.com",
       "customActions": {
         "b461bf4f-1e92-4dc8-87e2-fcbdec53d20b": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "cssurl": "https://5jsdrp.sharepoint.com/Shared%20Documents/k1.css"
+            "cssurl": "/config/k1.css"
           }
         }
       }
     },
     "appcustomizerInjectCss": {
-      "pageUrl": "https://5jsdrp.sharepoint.com",
+      "pageUrl": "https://esabz.sharepoint.com",
       "customActions": {
         "b461bf4f-1e92-4dc8-87e2-fcbdec53d20b": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "cssurl": "https://5jsdrp.sharepoint.com/Shared%20Documents/k1.css"
+            "cssurl": "/config/k1.css"
           }
         }
       }
