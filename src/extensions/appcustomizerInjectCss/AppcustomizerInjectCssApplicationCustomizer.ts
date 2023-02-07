@@ -8,6 +8,7 @@ import {
 import  styles  from './AppcustomizerInjectCssApplicationCustomizer.module.scss';
 
 import * as strings from 'AppcustomizerInjectCssApplicationCustomizerStrings';
+import * as $ from 'jquery';
 
 const LOG_SOURCE: string = 'AppcustomizerInjectCssApplicationCustomizer';
 
@@ -31,7 +32,7 @@ export default class AppcustomizerInjectCssApplicationCustomizer
     public onInit(): Promise<void> {
       
       const cssUrl: string =  this.properties.cssurl;
-      console.log(cssUrl);
+      //console.log(cssUrl);
       if (cssUrl) {
           // inject the style sheet
           const head: any = document.getElementsByTagName("head")[0] || document.documentElement;
@@ -42,9 +43,26 @@ export default class AppcustomizerInjectCssApplicationCustomizer
           head.insertAdjacentElement("beforeEnd", customStyle);
       }
       
+      $(document).ready(function(){
+
+        getHidedContent()
+        function getHidedContent(){
+          
+          setTimeout(function () {
+              
+          }, 5000);
+          
+          //var elem = $('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').html();
+          $('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');
+          //$('.ms-FocusZone').html(elem);
+          
+          
+        }
+      })
 
       return Promise.resolve();
     }
+
 
 
 }

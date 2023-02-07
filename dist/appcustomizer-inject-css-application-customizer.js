@@ -1,4 +1,4 @@
-define("b461bf4f-1e92-4dc8-87e2-fcbdec53d20b_0.0.1", ["@microsoft/sp-application-base"], function(__WEBPACK_EXTERNAL_MODULE_GPet__) { return /******/ (function(modules) { // webpackBootstrap
+define("b461bf4f-1e92-4dc8-87e2-fcbdec53d20b_0.0.1", ["@microsoft/sp-application-base","jquery"], function(__WEBPACK_EXTERNAL_MODULE_GPet__, __WEBPACK_EXTERNAL_MODULE_xeH2__) { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -108,6 +108,8 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_GPet__;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _microsoft_sp_application_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @microsoft/sp-application-base */ "GPet");
 /* harmony import */ var _microsoft_sp_application_base__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_application_base__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "xeH2");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -122,6 +124,7 @@ var __extends = (undefined && undefined.__extends) || (function () {
     };
 })();
 
+
 var LOG_SOURCE = 'AppcustomizerInjectCssApplicationCustomizer';
 /** A Custom Action which can be run during execution of a Client Side Application */
 var AppcustomizerInjectCssApplicationCustomizer = /** @class */ (function (_super) {
@@ -131,7 +134,7 @@ var AppcustomizerInjectCssApplicationCustomizer = /** @class */ (function (_supe
     }
     AppcustomizerInjectCssApplicationCustomizer.prototype.onInit = function () {
         var cssUrl = this.properties.cssurl;
-        console.log(cssUrl);
+        //console.log(cssUrl);
         if (cssUrl) {
             // inject the style sheet
             var head = document.getElementsByTagName("head")[0] || document.documentElement;
@@ -141,12 +144,33 @@ var AppcustomizerInjectCssApplicationCustomizer = /** @class */ (function (_supe
             customStyle.type = "text/css";
             head.insertAdjacentElement("beforeEnd", customStyle);
         }
+        jquery__WEBPACK_IMPORTED_MODULE_1__(document).ready(function () {
+            getHidedContent();
+            function getHidedContent() {
+                setTimeout(function () {
+                }, 5000);
+                //var elem = $('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').html();
+                jquery__WEBPACK_IMPORTED_MODULE_1__('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');
+                //$('.ms-FocusZone').html(elem);
+            }
+        });
         return Promise.resolve();
     };
     return AppcustomizerInjectCssApplicationCustomizer;
 }(_microsoft_sp_application_base__WEBPACK_IMPORTED_MODULE_0__["BaseApplicationCustomizer"]));
 /* harmony default export */ __webpack_exports__["default"] = (AppcustomizerInjectCssApplicationCustomizer);
 
+
+/***/ }),
+
+/***/ "xeH2":
+/*!*************************!*\
+  !*** external "jquery" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_xeH2__;
 
 /***/ })
 

@@ -14,12 +14,16 @@
     "scriptResources": {
       "appcustomizer-inject-css-application-customizer": {
         "type": "path",
-        "path": "appcustomizer-inject-css-application-customizer_534a7cdcd8e969f75b17.js"
+        "path": "appcustomizer-inject-css-application-customizer_03f3ca85ce1449817c76.js"
       },
       "@microsoft/sp-application-base": {
         "type": "component",
         "id": "4df9bb86-ab0a-4aab-ab5f-48bf167048fb",
         "version": "1.14.0"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "https://code.jquery.com/jquery-2.2.4.min.js"
       }
     }
   }

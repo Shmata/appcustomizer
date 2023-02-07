@@ -11,7 +11,9 @@
       ]
     }
   },
-  "externals": {},
+  "externals": {
+    "jquery":"https://code.jquery.com/jquery-2.2.4.min.js"
+  },
   "localizedResources": {
     "AppcustomizerInjectCssApplicationCustomizerStrings": "lib/extensions/appcustomizerInjectCss/loc/{locale}.js"
   }

@@ -4,23 +4,23 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://esabz.sharepoint.com",
+      "pageUrl": "https://esabz.sharepoint.com/sites/klarinet",
       "customActions": {
         "b461bf4f-1e92-4dc8-87e2-fcbdec53d20b": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "cssurl": "/config/k1.css"
+            "cssurl": "/sites/klarinet/config/k1.css"
           }
         }
       }
     },
     "appcustomizerInjectCss": {
-      "pageUrl": "https://esabz.sharepoint.com",
+      "pageUrl": "https://esabz.sharepoint.com/sites/klarinet",
       "customActions": {
         "b461bf4f-1e92-4dc8-87e2-fcbdec53d20b": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "cssurl": "/config/k1.css"
+            "cssurl": "/sites/klarinet/config/k1.css"
           }
         }
       }
