@@ -1,4 +1,4 @@
-define("b461bf4f-1e92-4dc8-87e2-fcbdec53d20b_0.0.1", ["@microsoft/sp-application-base","jquery"], function(__WEBPACK_EXTERNAL_MODULE_GPet__, __WEBPACK_EXTERNAL_MODULE_xeH2__) { return /******/ (function(modules) { // webpackBootstrap
+define("b461bf4f-1e92-4dc8-87e2-fcbdec53d20b_1.0.1", ["@microsoft/sp-application-base","jquery"], function(__WEBPACK_EXTERNAL_MODULE_GPet__, __WEBPACK_EXTERNAL_MODULE_xeH2__) { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -148,9 +148,9 @@ var AppcustomizerInjectCssApplicationCustomizer = /** @class */ (function (_supe
             getHidedContent();
             function getHidedContent() {
                 setTimeout(function () {
-                }, 5000);
+                }, 7000);
                 //var elem = $('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').html();
-                jquery__WEBPACK_IMPORTED_MODULE_1__('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');
+                //$('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');
                 //$('.ms-FocusZone').html(elem);
             }
         });

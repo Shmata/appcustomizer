@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "8338c247e8353c7b87e0",
-  "time": 987,
-  "builtAt": 1675795950210,
+  "hash": "ada6cb1210e5cca3bcfb",
+  "time": 869,
+  "builtAt": 1675878329969,
   "publicPath": "",
   "outputPath": "D:\\host\\MySPFx\\appcustomizer\\dist",
   "assetsByChunkName": {
-    "appcustomizer-inject-css-application-customizer": "appcustomizer-inject-css-application-customizer_03f3ca85ce1449817c76.js"
+    "appcustomizer-inject-css-application-customizer": "appcustomizer-inject-css-application-customizer_1e417309c1af5fa4ac74.js"
   },
   "assets": [
     {
-      "name": "appcustomizer-inject-css-application-customizer_03f3ca85ce1449817c76.js",
-      "size": 2104,
+      "name": "appcustomizer-inject-css-application-customizer_1e417309c1af5fa4ac74.js",
+      "size": 2133,
       "chunks": [
         0
       ],
@@ -41,7 +41,7 @@
         0
       ],
       "assets": [
-        "appcustomizer-inject-css-application-customizer_03f3ca85ce1449817c76.js"
+        "appcustomizer-inject-css-application-customizer_1e417309c1af5fa4ac74.js"
       ],
       "children": {},
       "childAssets": {}
@@ -53,7 +53,7 @@
         0
       ],
       "assets": [
-        "appcustomizer-inject-css-application-customizer_03f3ca85ce1449817c76.js"
+        "appcustomizer-inject-css-application-customizer_1e417309c1af5fa4ac74.js"
       ],
       "children": {},
       "childAssets": {}
@@ -65,14 +65,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 2665,
+      "size": 2816,
       "names": [
         "appcustomizer-inject-css-application-customizer"
       ],
       "files": [
-        "appcustomizer-inject-css-application-customizer_03f3ca85ce1449817c76.js"
+        "appcustomizer-inject-css-application-customizer_1e417309c1af5fa4ac74.js"
       ],
-      "hash": "8cb7ef051153f5910752",
+      "hash": "5404c16941994a1dec2f",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -122,7 +122,7 @@
               "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
               "type": "harmony import specifier",
               "userRequest": "@microsoft/sp-application-base",
-              "loc": "48:2-27"
+              "loc": "49:2-27"
             }
           ],
           "usedExports": [
@@ -140,7 +140,7 @@
           "name": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
           "index": 0,
           "index2": 2,
-          "size": 2581,
+          "size": 2732,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -175,7 +175,7 @@
             "ModuleConcatenation bailout: Module is an entry point"
           ],
           "depth": 0,
-          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { BaseApplicationCustomizer } from '@microsoft/sp-application-base';\r\nimport * as $ from 'jquery';\r\nvar LOG_SOURCE = 'AppcustomizerInjectCssApplicationCustomizer';\r\n/** A Custom Action which can be run during execution of a Client Side Application */\r\nvar AppcustomizerInjectCssApplicationCustomizer = /** @class */ (function (_super) {\r\n    __extends(AppcustomizerInjectCssApplicationCustomizer, _super);\r\n    function AppcustomizerInjectCssApplicationCustomizer() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    AppcustomizerInjectCssApplicationCustomizer.prototype.onInit = function () {\r\n        var cssUrl = this.properties.cssurl;\r\n        //console.log(cssUrl);\r\n        if (cssUrl) {\r\n            // inject the style sheet\r\n            var head = document.getElementsByTagName(\"head\")[0] || document.documentElement;\r\n            var customStyle = document.createElement(\"link\");\r\n            customStyle.href = cssUrl;\r\n            customStyle.rel = \"stylesheet\";\r\n            customStyle.type = \"text/css\";\r\n            head.insertAdjacentElement(\"beforeEnd\", customStyle);\r\n        }\r\n        $(document).ready(function () {\r\n            getHidedContent();\r\n            function getHidedContent() {\r\n                setTimeout(function () {\r\n                }, 5000);\r\n                //var elem = $('.ms-compositeHeader, div[role=\"header\"], div[data-automationid=\"SiteHeader\"], .ms-HubNav, .sp-App-hubNav:eq(1)').html();\r\n                $('.ms-compositeHeader, div[role=\"header\"], div[data-automationid=\"SiteHeader\"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');\r\n                //$('.ms-FocusZone').html(elem);\r\n            }\r\n        });\r\n        return Promise.resolve();\r\n    };\r\n    return AppcustomizerInjectCssApplicationCustomizer;\r\n}(BaseApplicationCustomizer));\r\nexport default AppcustomizerInjectCssApplicationCustomizer;\r\n//# sourceMappingURL=AppcustomizerInjectCssApplicationCustomizer.js.map"
+          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { BaseApplicationCustomizer } from '@microsoft/sp-application-base';\r\nimport * as $ from 'jquery';\r\nvar LOG_SOURCE = 'AppcustomizerInjectCssApplicationCustomizer';\r\n/** A Custom Action which can be run during execution of a Client Side Application */\r\nvar AppcustomizerInjectCssApplicationCustomizer = /** @class */ (function (_super) {\r\n    __extends(AppcustomizerInjectCssApplicationCustomizer, _super);\r\n    function AppcustomizerInjectCssApplicationCustomizer() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    AppcustomizerInjectCssApplicationCustomizer.prototype.onInit = function () {\r\n        var cssUrl = this.properties.cssurl;\r\n        //console.log(cssUrl);\r\n        if (cssUrl) {\r\n            // inject the style sheet\r\n            var head = document.getElementsByTagName(\"head\")[0] || document.documentElement;\r\n            var customStyle = document.createElement(\"link\");\r\n            customStyle.href = cssUrl;\r\n            customStyle.rel = \"stylesheet\";\r\n            customStyle.type = \"text/css\";\r\n            head.insertAdjacentElement(\"beforeEnd\", customStyle);\r\n        }\r\n        $(document).ready(function () {\r\n            getHidedContent();\r\n            function getHidedContent() {\r\n                setTimeout(function () {\r\n                }, 7000);\r\n                //var elem = $('.ms-compositeHeader, div[role=\"header\"], div[data-automationid=\"SiteHeader\"], .ms-HubNav, .sp-App-hubNav:eq(1)').html();\r\n                //$('.ms-compositeHeader, div[role=\"header\"], div[data-automationid=\"SiteHeader\"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');\r\n                var elem = $(\"#spSiteHeader > div >  div[class^='headerRow-'] > div > div[class^='adjacentTitleSubcell-'] > div\").html();\r\n                $(elem).insertBefore($('.ms-CommandBar'));\r\n            }\r\n        });\r\n        return Promise.resolve();\r\n    };\r\n    return AppcustomizerInjectCssApplicationCustomizer;\r\n}(BaseApplicationCustomizer));\r\nexport default AppcustomizerInjectCssApplicationCustomizer;\r\n//# sourceMappingURL=AppcustomizerInjectCssApplicationCustomizer.js.map"
         },
         {
           "id": "xeH2",
@@ -230,7 +230,25 @@
               "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
               "type": "harmony import specifier",
               "userRequest": "jquery",
-              "loc": "41:16-17"
+              "loc": "42:27-28"
+            },
+            {
+              "moduleId": "P6WS",
+              "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+              "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "type": "harmony import specifier",
+              "userRequest": "jquery",
+              "loc": "43:16-17"
+            },
+            {
+              "moduleId": "P6WS",
+              "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+              "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+              "type": "harmony import specifier",
+              "userRequest": "jquery",
+              "loc": "43:37-38"
             }
           ],
           "usedExports": true,
@@ -299,7 +317,7 @@
           "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
           "type": "harmony import specifier",
           "userRequest": "@microsoft/sp-application-base",
-          "loc": "48:2-27"
+          "loc": "49:2-27"
         }
       ],
       "usedExports": [
@@ -343,7 +361,7 @@
       "name": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
       "index": 0,
       "index2": 2,
-      "size": 2581,
+      "size": 2732,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -378,7 +396,7 @@
         "ModuleConcatenation bailout: Module is an entry point"
       ],
       "depth": 0,
-      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { BaseApplicationCustomizer } from '@microsoft/sp-application-base';\r\nimport * as $ from 'jquery';\r\nvar LOG_SOURCE = 'AppcustomizerInjectCssApplicationCustomizer';\r\n/** A Custom Action which can be run during execution of a Client Side Application */\r\nvar AppcustomizerInjectCssApplicationCustomizer = /** @class */ (function (_super) {\r\n    __extends(AppcustomizerInjectCssApplicationCustomizer, _super);\r\n    function AppcustomizerInjectCssApplicationCustomizer() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    AppcustomizerInjectCssApplicationCustomizer.prototype.onInit = function () {\r\n        var cssUrl = this.properties.cssurl;\r\n        //console.log(cssUrl);\r\n        if (cssUrl) {\r\n            // inject the style sheet\r\n            var head = document.getElementsByTagName(\"head\")[0] || document.documentElement;\r\n            var customStyle = document.createElement(\"link\");\r\n            customStyle.href = cssUrl;\r\n            customStyle.rel = \"stylesheet\";\r\n            customStyle.type = \"text/css\";\r\n            head.insertAdjacentElement(\"beforeEnd\", customStyle);\r\n        }\r\n        $(document).ready(function () {\r\n            getHidedContent();\r\n            function getHidedContent() {\r\n                setTimeout(function () {\r\n                }, 5000);\r\n                //var elem = $('.ms-compositeHeader, div[role=\"header\"], div[data-automationid=\"SiteHeader\"], .ms-HubNav, .sp-App-hubNav:eq(1)').html();\r\n                $('.ms-compositeHeader, div[role=\"header\"], div[data-automationid=\"SiteHeader\"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');\r\n                //$('.ms-FocusZone').html(elem);\r\n            }\r\n        });\r\n        return Promise.resolve();\r\n    };\r\n    return AppcustomizerInjectCssApplicationCustomizer;\r\n}(BaseApplicationCustomizer));\r\nexport default AppcustomizerInjectCssApplicationCustomizer;\r\n//# sourceMappingURL=AppcustomizerInjectCssApplicationCustomizer.js.map"
+      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { BaseApplicationCustomizer } from '@microsoft/sp-application-base';\r\nimport * as $ from 'jquery';\r\nvar LOG_SOURCE = 'AppcustomizerInjectCssApplicationCustomizer';\r\n/** A Custom Action which can be run during execution of a Client Side Application */\r\nvar AppcustomizerInjectCssApplicationCustomizer = /** @class */ (function (_super) {\r\n    __extends(AppcustomizerInjectCssApplicationCustomizer, _super);\r\n    function AppcustomizerInjectCssApplicationCustomizer() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    AppcustomizerInjectCssApplicationCustomizer.prototype.onInit = function () {\r\n        var cssUrl = this.properties.cssurl;\r\n        //console.log(cssUrl);\r\n        if (cssUrl) {\r\n            // inject the style sheet\r\n            var head = document.getElementsByTagName(\"head\")[0] || document.documentElement;\r\n            var customStyle = document.createElement(\"link\");\r\n            customStyle.href = cssUrl;\r\n            customStyle.rel = \"stylesheet\";\r\n            customStyle.type = \"text/css\";\r\n            head.insertAdjacentElement(\"beforeEnd\", customStyle);\r\n        }\r\n        $(document).ready(function () {\r\n            getHidedContent();\r\n            function getHidedContent() {\r\n                setTimeout(function () {\r\n                }, 7000);\r\n                //var elem = $('.ms-compositeHeader, div[role=\"header\"], div[data-automationid=\"SiteHeader\"], .ms-HubNav, .sp-App-hubNav:eq(1)').html();\r\n                //$('.ms-compositeHeader, div[role=\"header\"], div[data-automationid=\"SiteHeader\"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');\r\n                var elem = $(\"#spSiteHeader > div >  div[class^='headerRow-'] > div > div[class^='adjacentTitleSubcell-'] > div\").html();\r\n                $(elem).insertBefore($('.ms-CommandBar'));\r\n            }\r\n        });\r\n        return Promise.resolve();\r\n    };\r\n    return AppcustomizerInjectCssApplicationCustomizer;\r\n}(BaseApplicationCustomizer));\r\nexport default AppcustomizerInjectCssApplicationCustomizer;\r\n//# sourceMappingURL=AppcustomizerInjectCssApplicationCustomizer.js.map"
     },
     {
       "id": "xeH2",
@@ -433,7 +451,25 @@
           "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
           "type": "harmony import specifier",
           "userRequest": "jquery",
-          "loc": "41:16-17"
+          "loc": "42:27-28"
+        },
+        {
+          "moduleId": "P6WS",
+          "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "type": "harmony import specifier",
+          "userRequest": "jquery",
+          "loc": "43:16-17"
+        },
+        {
+          "moduleId": "P6WS",
+          "moduleIdentifier": "D:\\host\\MySPFx\\appcustomizer\\lib\\extensions\\appcustomizerInjectCss\\AppcustomizerInjectCssApplicationCustomizer.js",
+          "module": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "moduleName": "./lib/extensions/appcustomizerInjectCss/AppcustomizerInjectCssApplicationCustomizer.js",
+          "type": "harmony import specifier",
+          "userRequest": "jquery",
+          "loc": "43:37-38"
         }
       ],
       "usedExports": true,

@@ -50,11 +50,14 @@ export default class AppcustomizerInjectCssApplicationCustomizer
           
           setTimeout(function () {
               
-          }, 5000);
+          }, 7000);
           
           //var elem = $('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').html();
-          $('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');
-          //$('.ms-FocusZone').html(elem);
+          //$('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');
+
+          var elem = $("#spSiteHeader > div >  div[class^='headerRow-'] > div > div[class^='adjacentTitleSubcell-'] > div").html()
+          $(elem).insertBefore($('.ms-CommandBar'));
+          
           
           
         }

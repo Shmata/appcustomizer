@@ -3,7 +3,7 @@
   "alias": "AppcustomizerInjectCssApplicationCustomi",
   "componentType": "Extension",
   "extensionType": "ApplicationCustomizer",
-  "version": "0.0.1",
+  "version": "2.1.1",
   "manifestVersion": 2,
   "requiresCustomScript": false,
   "loaderConfig": {
@@ -14,7 +14,7 @@
     "scriptResources": {
       "appcustomizer-inject-css-application-customizer": {
         "type": "path",
-        "path": "appcustomizer-inject-css-application-customizer_03f3ca85ce1449817c76.js"
+        "path": "appcustomizer-inject-css-application-customizer_1e417309c1af5fa4ac74.js"
       },
       "@microsoft/sp-application-base": {
         "type": "component",

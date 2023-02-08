@@ -1,6 +1,6 @@
 {
   "name": "appcustomizer-k-1-proj",
-  "version": "1.0.1",
+  "version": "2.1.1",
   "private": true,
   "main": "lib/index.js",
   "scripts": {
