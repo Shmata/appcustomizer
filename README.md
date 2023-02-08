@@ -1,4 +1,4 @@
-# appcustomizer-k-1-proj
+# appcustomizer-proj
 
 ## Summary
 
