@@ -10,6 +10,9 @@ import  styles  from './AppcustomizerInjectCssApplicationCustomizer.module.scss'
 import * as strings from 'AppcustomizerInjectCssApplicationCustomizerStrings';
 import * as $ from 'jquery';
 
+import { Services } from '../../services';
+import { IMenu } from '../../models/IMenu';
+
 const LOG_SOURCE: string = 'AppcustomizerInjectCssApplicationCustomizer';
 
 /**
@@ -27,10 +30,21 @@ export interface IAppcustomizerInjectCssApplicationCustomizerProperties {
 export default class AppcustomizerInjectCssApplicationCustomizer
     extends BaseApplicationCustomizer<IAppcustomizerInjectCssApplicationCustomizerProperties> {
 
-
+    private services: Services;
 
     public onInit(): Promise<void> {
       
+      this.services = new Services(
+        this.context.pageContext.web.absoluteUrl,
+        this.context.spHttpClient
+      )
+
+      this.services.getMenu().then((menu: IMenu[])=>{
+        //console.log(menu)
+        this._renderQuickLaunch( menu)
+      })
+
+
       const cssUrl: string =  this.properties.cssurl;
       //console.log(cssUrl);
       if (cssUrl) {
@@ -45,25 +59,43 @@ export default class AppcustomizerInjectCssApplicationCustomizer
       
       $(document).ready(function(){
 
-        getHidedContent()
-        function getHidedContent(){
-          
-          setTimeout(function () {
-              
-          }, 7000);
-          
-          //var elem = $('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').html();
-          //$('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');
 
-          var elem = $("#spSiteHeader > div >  div[class^='headerRow-'] > div > div[class^='adjacentTitleSubcell-'] > div").html()
-          $(elem).insertBefore($('.ms-CommandBar'));
+        
+
+
+        setTimeout(changeStyle, 4000);
+          // v1.0.0 order          
+          //var elem = $('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').html();
+          //$('.ms-compositeHeader, div[role="header"], div[data-automationid="SiteHeader"], .ms-HubNav, .sp-App-hubNav:eq(1)').removeClass('ms-HubNav');          
+
+        function changeStyle(){
+          // v2.0.0 order
+          //var elem = $("#spSiteHeader > div >  div[class^='headerRow-'] > div > div[class^='adjacentTitleSubcell-'] > div").html()
+          //var elem = $("div[class^='adjacentTitleSubcell-']").html();
+          var elem = $("#spSiteHeader").html();
+          $(elem).insertBefore($('.ms-CommandBar')); 
           
-          
-          
+
         }
       })
 
       return Promise.resolve();
+    }
+
+    private _renderQuickLaunch( menus: IMenu[]):void {
+      let element: HTMLElement = document.getElementById['spCommandBar'] ;
+      let menuList: string = ''; 
+      if(menus && menus.length && menus.length > 0 ){
+        menus.forEach((menu: IMenu) =>{
+          menuList = menuList + `
+            <li key='${menu.Id}'><a href='${menu.Url}'>${menu.Title}</a></li>
+          `
+        });
+      }
+
+      element.innerHTML = `<ul>${menuList}</ul>`;
+
+      console.log(menuList);
     }
 
 
